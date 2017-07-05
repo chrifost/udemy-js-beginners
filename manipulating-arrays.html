@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Manipulating Arrays</title>
+  </head>
+  <body>
+    <script>
+
+      var cars = ["BWM", "FORD", "HONDA"];
+
+      // write full array
+      document.write("Original: " + cars + "<br>");
+
+      //Remove something from end
+      cars.pop();
+      document.write("pop(): " + cars + "<br>");
+
+      //Remove something from end
+      cars.push("INFINITI");
+      document.write("push(): " + cars + "<br>");
+
+      //Remove 1st item from beginning
+      cars.shift();
+      document.write("shift(): " + cars + "<br>");
+
+      //adds to beginning of array
+      cars.unshift("TOYOTA", "MERCEDES");
+      document.write("unshift(): " + cars + "<br>");
+
+      //Splice in, but don't replace
+      cars.splice( 2, 0, "DOG", "CAT");
+      document.write("splice(): " + cars + "<br>");
+
+      //Splice in, but do replace
+      cars.splice( 2, 4, "DOG", "CAT");
+      document.write("splice(): " + cars + "<br>");
+
+      //Slice (copy), what you want from one array to another
+      var fancyCars = cars.slice(1,2)
+      document.write("slice(): " + fancyCars + "<br>");
+
+
+    </script>
+  </body>
+</html>
